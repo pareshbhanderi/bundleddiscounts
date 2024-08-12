@@ -2,14 +2,14 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
-    <title>nopAccelerate Plus</title>
-    <meta name="generator" content="nopAccelerate" />
+    <title>Bundled Discounts</title>
+    <meta name="generator" content="Bundled Discounts" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
-    <link rel="stylesheet" href="/nopaccelerateplus/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/nopaccelerateplus/assets/css/custom.css">
+    <link rel="stylesheet" href="/bundleddiscounts/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bundleddiscounts/assets/css/custom.css">
   </head>
   <body class="body-wrapper">
     <header>
@@ -18,7 +18,7 @@
           <span></span>
         </div>
         <div class="col-10 col-sm-9 col-lg-12 main-title">
-          <h1>nopAccelerate Plus Documentation</h1>
+          <h1>Bundled Discounts Documentation</h1>
         </div>
       </div>
     </header>
@@ -47,9 +47,18 @@
                       <div id="collapseHistoryOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
                         <div class="accordion-body">
                           <ul class="list-group">
-                            <li class="list-group-item"><a href="040.html">0.4.0</a></li>
-                            <li class="list-group-item"><a href="0301115.html">0.3.0.1115</a></li>
-                            <li class="list-group-item"><a href="0301056.html">0.3.0.1056</a></li>
+                            <li class="list-group-item"><a href="100.html">1.0.0</a></li>
+                            <li class="list-group-item"><a href="101.html">1.0.1</a></li>
+                            <li class="list-group-item"><a href="110.html">1.1.0</a></li>
+                            <li class="list-group-item"><a href="120.html">1.2.0</a></li>
+                            <li class="list-group-item"><a href="#">1.1.3</a></li>
+                            <li class="list-group-item"><a href="#">1.2.1</a></li>
+                            <li class="list-group-item"><a href="#">1.2.2</a></li>
+                            <li class="list-group-item"><a href="#">1.3.0</a></li>
+                            <li class="list-group-item"><a href="#">1.3.1</a></li>
+                            <li class="list-group-item"><a href="#">1.3.2</a></li>
+                            <li class="list-group-item"><a href="#">1.3.3</a></li>
+                            <li class="list-group-item"><a href="#">1.4.0</a></li>
                           </ul>
                         </div>
                       </div>
@@ -143,7 +152,7 @@
     <button id="backButton">Go Back</button>
   </div>
   <div class="page-title">
-    <h2>0.4.0</h2>
+    <h2>0.3.0</h2>
   </div>
   <div class="section-content">
     <div class="table-responsive">
@@ -151,15 +160,15 @@
             <tbody>
                 <tr>
                     <th>Release Date</th>
-                    <td>30th July 2019</td>
+                    <td>February 08, 2019</td>
                 </tr>
                 <tr>
                     <th>Plug-In Version</th>
-                    <td>0.4.0</td>
+                    <td>0.3.0</td>
                 </tr>
                 <tr>
                     <th>Supported nopCommerce Version</th>
-                    <td>4.20</td>
+                    <td>4.10</td>
                 </tr>
             </tbody>
         </table>
@@ -172,12 +181,11 @@
   </div>
   <div class="section-content">
     <ul class="info-badges">
-      <li>Added a feature that allows store owner to give in-stock product higher relevancy for search results.</li>
-      <li>Solr Down notification now supports multiple email addresses in a comma separated list.</li>
-      <li>New licensing system implementation with Product Limit &amp; Expiration Date.</li>
-      <li>Performance improvement. Added a setting to ignore AvailableStartDateTimeUtc &amp; AvailableEndDateTimeUtc, this improve raw Solr query performance.</li>
-      <li>Performance improvement. We now use baseController instead of basePublicController for searching products.</li>
-      <li>Performance improvement. AutoComplete search is now coming within 50 ms.</li>
+      <li>Config Page UI Enhancement.</li>
+      <li>SEO Enhancements contains No-Index &amp; canonical URL management.</li>
+      <li>License Implementation on Catalog Plugin.</li>
+      <li>Separate Catalog Setting &amp; Search Settings.</li>
+      <li>Separate General Setting Instead of Performance Setting.</li>
     </ul>
   </div>
 </div>
@@ -187,29 +195,11 @@
   </div>
   <div class="section-content">
     <ul class="info-badges">
-      <li>Fixed Issues. Convert to Decimal is not working when language culture is other than English. Now it works with all language cultures.</li>
-        <li>Fixed Issues. Solr down alert was not showing on front side when admin is logged in.</li>
-        <li>Fixed Issues. Solr debug query throwing object reference error when solr is down.</li>
-        <li>Fixed Issues. General settings, 'Enable Ajax request' must be enabled for 'Enable Infinite Scrolling' to work.</li>
-        <li>Fixed Issues. Catalog pages not showing the images for second store, when plugin is enabled.</li>
-        <li>Fixed Issues. Images does not load on Catalog Pages in Product Box when using SSL.</li>
-        <li>Fixed Issues. Remove extra horizontal space from selected facet section.</li>
-        <li>Fixed Issues. Reload Core &amp; Core Setup does not work when we have ‘solr’ in the name of hostname in Solr Core URL.</li>
-        <li>Fixed Issues. Remove extra unused entities from db-config.xml except Product Entity.</li>
-        <li>Fixed Issues. Buttons spacing missing in configuration page.</li>
-        <li>Fixed Issues. Core Setup ajax call failed when app is hosted as virtual directory ex: localhost/nopcommerce.</li>
-        <li>Fixed Issues. Tour tooltip information should come only once when configure page is opened for first time in a week.</li>
-        <li>Fixed Issues. Added validation for plugin settings.</li>
-        <li>Fixed Issues. Spellcheck is not working correctly with SKU &amp; GTIN.</li>
-        <li>Fixed Issues. Products are not marked as Pending for Index Status when change Specification Attributes Values.</li>
-        <li>Fixed Issues. Page number should contain href attribute for SEO when infinite scrolling is disabled.</li>
-        <li>Fixed Issues. Infinite Scrolling &amp; Display No. of Products found does not work when Facets are disabled.</li>
-        <li>Fixed Issues. Select WidgetZone For Facet Filter is not working for Catalog Pages.</li>
-        <li>Fixed Issues. Searching was considering html tags &amp; styles for Full Description field. Now html tags &amp; styles are stripped.</li>
-        <li>Fixed Issues. License section design is broken when license is expired or when it fails to validate.</li>
-        <li>Fixed Issues. Infinite scrolling is not working when Infinite Scrolling till Page is 1.</li>
-        <li>Fixed Issues. Mega menu was not displayed as expected when category page loading from nopAccelerate &amp; JavaScript minification was enabled. Now it works.</li>
-        <li>Fixed Issues. Advance search option must hide when searching products from nopAccelerate plus.</li>
+      <li>Price Slot &amp; Price Range Proper Implementation for Catalog Settings.</li>
+      <li>Proper version number &amp; plugin version name management for catalog plugin.</li>
+      <li>Export setting also contains catalog setting in Export file.</li>
+      <li>PageSize Options are working properly with Ajax Filter.</li>
+      <li>ViewMode option is working properly with Ajax Filter.</li>
     </ul>
   </div>
 </div>
@@ -219,7 +209,7 @@
   </div>
   <div class="section-content">
     <ul class="info-badges">
-      <li>Yes, because change in Stored Procedure &amp; manage schema Structure</li>
+      <li>Yes, Uninstallation of previous plugin &amp; Installation of New plugin is required Because We have moved so catalog setting.</li>
     </ul>
   </div>
 </div>
@@ -229,7 +219,7 @@
   </div>
   <div class="section-content">
     <ul class="info-badges">
-      <li>Yes, As changed the managed schema structure</li>
+      <li>Yes, So need to Indexing again.</li>
     </ul>
   </div>
 </div>
@@ -240,9 +230,9 @@
     <footer>
       <p>Copyright © 2024 by Xcellence-IT. All Rights Reserved.</p>
     </footer>
-    <script type="text/javascript" src="/nopaccelerateplus/assets/scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="/nopaccelerateplus/assets/scripts/popper.min.js"></script>
-    <script type="text/javascript" src="/nopaccelerateplus/assets/scripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/nopaccelerateplus/assets/scripts/custom.js"></script>
+    <script type="text/javascript" src="/bundleddiscounts/assets/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/bundleddiscounts/assets/scripts/popper.min.js"></script>
+    <script type="text/javascript" src="/bundleddiscounts/assets/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/bundleddiscounts/assets/scripts/custom.js"></script>
   </body>
 </html>
